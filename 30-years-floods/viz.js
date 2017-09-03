@@ -161,5 +161,5 @@ var process_data = function(error, states, floods) {
 
 d3.queue()
     .defer(d3.json, "https://cdn.rawgit.com/deldersveld/topojson/830a27a4d1900ca781d5f3dbccea1e499d88ff6d/countries/india/india-states.json")
-    .defer(d3.json, "data/floods.json")
+    .defer(d3.json, "data/india-floods.json")
     .await(process_data);

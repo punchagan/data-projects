@@ -41,8 +41,23 @@ var show_floods = function (data, boundary, country, year) {
         .append("path")
         .attr('data-severity', function(e){return e.properties.SEVERITY;})
         .attr('class', function(e){return SEVERITY_CLASSES[e.properties.SEVERITY].class + '-flood';})
-        .attr("d", path);
-        // .on('mouseover', tip.show);
+        .attr("d", path)
+        .on("mouseover", function(d) {
+            var tooltip = d3.select('.tooltip');
+            tooltip.transition()
+                .duration(200)
+                .style("opacity", .9);
+            console.log(d);
+            tooltip.html(format_flood(d))
+                .style("left", (d3.event.pageX) + "px")
+                .style("top", (d3.event.pageY - 28) + "px");
+        })
+        .on("mouseout", function(d) {
+            var tooltip = d3.select('.tooltip');
+            tooltip.transition()
+                .duration(500)
+                .style("opacity", 0);
+        });
 
 };
 
@@ -69,6 +84,16 @@ var show_map = function(data, year){
 
     svg.append("text").text(year).attr('dx', 50).attr('dy', 75);
 };
+
+var format_flood = function(d) {
+    var html = "";
+    html += "Cause: " + d.properties.MAINCAUSE +"<br/>";
+    html += "Deaths: " + d.properties.DEAD +"<br/>";
+    html += "Displaced: " + d.properties.DISPLACED +"<br/>";
+    html += "Began: " + d.properties.BEGAN +"<br/>";
+    html += "Ended: " + d.properties.ENDED +"<br/>";
+    return html;
+}
 
 var show_legend = function(){
     var svg = d3.select('#chart')
@@ -111,6 +136,12 @@ var show_legend = function(){
     });
 };
 
+var add_tooltip = function(){
+    var div = d3.select("#chart").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+};
+
 var process_data = function(error, states, floods) {
     if (error) throw error;
     var india = topojson.feature(states, states.objects.IND_adm1),
@@ -121,6 +152,7 @@ var process_data = function(error, states, floods) {
         .object(floods.features),
         years = d3.keys(floods_nested[COUNTRY]);
     show_legend();
+    add_tooltip();
     d3.range(d3.min(years), 1+parseInt(d3.max(years))).forEach(function(year){
         show_map(india, year);
         show_floods(floods_nested, india, COUNTRY, year);

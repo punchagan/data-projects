@@ -50,3 +50,8 @@ svg.legend {
     border-radius: 8px;
     pointer-events: none;
 }
+line {
+    stroke: black;
+    stroke-width: 0.8;
+    stroke-opacity: 0.7;
+}

@@ -32,6 +32,24 @@ var show_floods = function (data, boundary, country, year) {
         path = d3.geoPath(projection);
     projection.fitSize([W, H], boundary);
 
+    var storm_label_positions = [[5, 75], [50, 75]];
+    var show_storm_name = function(d, i) {
+        var storm_matches = d.properties.MAINCAUSE.match(/Tropical Storm (.*)/),
+            name;
+        if (!storm_matches) { return; }
+        name = storm_matches[1];
+        var positions = storm_label_positions.pop(),
+            x1 = positions[0],
+            y1 = positions[1],
+            mark = projection([d.properties.LONG, d.properties.LAT]),
+            x2 = mark[0],
+            y2 = mark[1];
+        svg.append("text").text(name).attr('dx', x1).attr('dy', y1);
+        svg.append('line')
+            .attr('x1', x1+15).attr('y1', y1+2*((y1 < y2)?1:-5))
+            .attr('x2', x2).attr('y2', y2);
+    };
+
     //draw svg lines of the boundries
     svg.append("g")
         .attr("class", "flood")
@@ -57,8 +75,8 @@ var show_floods = function (data, boundary, country, year) {
             tooltip.transition()
                 .duration(500)
                 .style("opacity", 0);
-        });
-
+        })
+        .each(show_storm_name);
 };
 
 var show_map = function(data, year){
@@ -82,7 +100,7 @@ var show_map = function(data, year){
         .append("path")
         .attr("d", path);
 
-    svg.append("text").text(year).attr('dx', 50).attr('dy', 75);
+    svg.append("text").text(year).attr('dx', 50).attr('dy', 90);
 };
 
 var format_flood = function(d) {

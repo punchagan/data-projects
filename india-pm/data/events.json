@@ -2,161 +2,161 @@
   {
     "times": [
       {
+        "label": "Jawaharlal Nehru",
         "ending_time": -176707800000.0,
-        "starting_time": -706339800000.0,
-        "label": "Jawaharlal Nehru"
+        "starting_time": -706339800000.0
       }
     ],
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Jnehru.jpg/100px-Jnehru.jpg"
+    "icon": "images/100px-Jnehru.jpg"
   },
   {
     "times": [
       {
+        "label": "Lal Bahadur Shastri",
         "ending_time": -125386200000.0,
-        "starting_time": -175584600000.0,
-        "label": "Lal Bahadur Shastri"
+        "starting_time": -175584600000.0
       }
     ],
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Lal_Bahadur_Shastri_%28cropped%29.jpg/100px-Lal_Bahadur_Shastri_%28cropped%29.jpg"
+    "icon": "images/100px-Lal_Bahadur_Shastri_%28cropped%29.jpg"
   },
   {
     "times": [
       {
+        "label": "Indira Gandhi",
         "ending_time": 227989800000.0,
-        "starting_time": -124263000000.0,
-        "label": "Indira Gandhi"
+        "starting_time": -124263000000.0
       }
     ],
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Indira_Gandhi_1977.jpg/100px-Indira_Gandhi_1977.jpg"
+    "icon": "images/100px-Indira_Gandhi_1977.jpg"
   },
   {
     "times": [
       {
+        "label": "Morarji Desai",
         "ending_time": 301948200000.0,
-        "starting_time": 227989800000.0,
-        "label": "Morarji Desai"
+        "starting_time": 227989800000.0
       }
     ],
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Morarji_Desai_%28portrait%29.png/100px-Morarji_Desai_%28portrait%29.png"
+    "icon": "images/100px-Morarji_Desai_%28portrait%29.jpg"
   },
   {
     "times": [
       {
+        "label": "Charan Singh",
         "ending_time": 316636200000.0,
-        "starting_time": 301948200000.0,
-        "label": "Charan Singh"
+        "starting_time": 301948200000.0
       }
     ],
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Charan_Singh_%28cropped%29.jpg/100px-Charan_Singh_%28cropped%29.jpg"
+    "icon": "images/100px-Charan_Singh_%28cropped%29.jpg"
   },
   {
     "times": [
       {
+        "label": "Indira Gandhi",
         "ending_time": 468009000000.0,
-        "starting_time": 316636200000.0,
-        "label": "Indira Gandhi"
+        "starting_time": 316636200000.0
       }
     ],
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Indira_Gandhi_1977.jpg/100px-Indira_Gandhi_1977.jpg"
+    "icon": "images/100px-Indira_Gandhi_1977.jpg"
   },
   {
     "times": [
       {
+        "label": "Rajiv Gandhi",
         "ending_time": 628540200000.0,
-        "starting_time": 468009000000.0,
-        "label": "Rajiv Gandhi"
+        "starting_time": 468009000000.0
       }
     ],
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Rajiv_Gandhi_%281987%29.jpg/100px-Rajiv_Gandhi_%281987%29.jpg"
+    "icon": "images/100px-Rajiv_Gandhi_%281987%29.jpg"
   },
   {
     "times": [
       {
+        "label": "V. P. Singh",
         "ending_time": 658175400000.0,
-        "starting_time": 628540200000.0,
-        "label": "V. P. Singh"
+        "starting_time": 628540200000.0
       }
     ],
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/V._P._Singh_%28cropped%29.jpg/100px-V._P._Singh_%28cropped%29.jpg"
+    "icon": "images/100px-V._P._Singh_%28cropped%29.jpg"
   },
   {
     "times": [
       {
+        "label": "Chandra Shekhar",
         "ending_time": 677442600000.0,
-        "starting_time": 658175400000.0,
-        "label": "Chandra Shekhar"
+        "starting_time": 658175400000.0
       }
     ],
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Chandra_Shekhar_%28cropped%29.jpg/100px-Chandra_Shekhar_%28cropped%29.jpg"
+    "icon": "images/100px-Chandra_Shekhar_%28cropped%29.jpg"
   },
   {
     "times": [
       {
+        "label": "P. V. Narasimha Rao",
         "ending_time": 832185000000.0,
-        "starting_time": 677442600000.0,
-        "label": "P. V. Narasimha Rao"
+        "starting_time": 677442600000.0
       }
     ],
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/P_V_Narasimha_Rao.png/100px-P_V_Narasimha_Rao.png"
+    "icon": "images/100px-P_V_Narasimha_Rao.jpg"
   },
   {
     "times": [
       {
+        "label": "Atal Bihari Vajpayee",
         "ending_time": 833567400000.0,
-        "starting_time": 832185000000.0,
-        "label": "Atal Bihari Vajpayee"
+        "starting_time": 832185000000.0
       }
     ],
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Ab_vajpayee.jpg/100px-Ab_vajpayee.jpg"
+    "icon": "images/100px-Ab_vajpayee.jpg"
   },
   {
     "times": [
       {
+        "label": "H. D. Deve Gowda",
         "ending_time": 861561000000.0,
-        "starting_time": 833567400000.0,
-        "label": "H. D. Deve Gowda"
+        "starting_time": 833567400000.0
       }
     ],
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Deve_Gowda_BNC.jpg/100px-Deve_Gowda_BNC.jpg"
+    "icon": "images/100px-Deve_Gowda_BNC.jpg"
   },
   {
     "times": [
       {
+        "label": "I. K. Gujral",
         "ending_time": 890245800000.0,
-        "starting_time": 861561000000.0,
-        "label": "I. K. Gujral"
+        "starting_time": 861561000000.0
       }
     ],
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Inder_Kumar_Gujral_071.jpg/100px-Inder_Kumar_Gujral_071.jpg"
+    "icon": "images/100px-Inder_Kumar_Gujral_071.jpg"
   },
   {
     "times": [
       {
+        "label": "Atal Bihari Vajpayee",
         "ending_time": 1085164200000.0,
-        "starting_time": 890245800000.0,
-        "label": "Atal Bihari Vajpayee"
+        "starting_time": 890245800000.0
       }
     ],
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Ab_vajpayee.jpg/100px-Ab_vajpayee.jpg"
+    "icon": "images/100px-Ab_vajpayee.jpg"
   },
   {
     "times": [
       {
+        "label": "Manmohan Singh",
         "ending_time": 1401042600000.0,
-        "starting_time": 1085164200000.0,
-        "label": "Manmohan Singh"
+        "starting_time": 1085164200000.0
       }
     ],
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Prime_Minister_Manmohan_Singh_in_WEF_%2C2009_%28cropped%29.jpg/100px-Prime_Minister_Manmohan_Singh_in_WEF_%2C2009_%28cropped%29.jpg"
+    "icon": "images/100px-Prime_Minister_Manmohan_Singh_in_WEF_%2C2009_%28cropped%29.jpg"
   },
   {
     "times": [
       {
-        "ending_time": 1505891194360.6858,
-        "starting_time": 1401042600000.0,
-        "label": "Narendra Modi"
+        "label": "Narendra Modi",
+        "ending_time": 1505918342178.5518,
+        "starting_time": 1401042600000.0
       }
     ],
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/PM_Modi_Portrait%28cropped%29.jpg/100px-PM_Modi_Portrait%28cropped%29.jpg"
+    "icon": "images/100px-PM_Modi_Portrait%28cropped%29.jpg"
   }
 ]

@@ -1,17 +1,17 @@
-Name,Term Start,Term End,Portrait
-Jawaharlal Nehru,1947-08-15,1964-05-27,images/100px-Jnehru.jpg
-Lal Bahadur Shastri,1964-06-09,1966-01-11,images/100px-Lal_Bahadur_Shastri_%28cropped%29.jpg
-Indira Gandhi,1966-01-24,1977-03-24,images/100px-Indira_Gandhi_1977.jpg
-Morarji Desai,1977-03-24,1979-07-28,images/100px-Morarji_Desai_%28portrait%29.jpg
-Charan Singh,1979-07-28,1980-01-14,images/100px-Charan_Singh_%28cropped%29.jpg
-Indira Gandhi,1980-01-14,1984-10-31,images/100px-Indira_Gandhi_1977.jpg
-Rajiv Gandhi,1984-10-31,1989-12-02,images/100px-Rajiv_Gandhi_%281987%29.jpg
-V. P. Singh,1989-12-02,1990-11-10,images/100px-V._P._Singh_%28cropped%29.jpg
-Chandra Shekhar,1990-11-10,1991-06-21,images/100px-Chandra_Shekhar_%28cropped%29.jpg
-P. V. Narasimha Rao,1991-06-21,1996-05-16,images/100px-P_V_Narasimha_Rao.jpg
-Atal Bihari Vajpayee,1996-05-16,1996-06-01,images/100px-Ab_vajpayee.jpg
-H. D. Deve Gowda,1996-06-01,1997-04-21,images/100px-Deve_Gowda_BNC.jpg
-I. K. Gujral,1997-04-21,1998-03-19,images/100px-Inder_Kumar_Gujral_071.jpg
-Atal Bihari Vajpayee,1998-03-19,2004-05-22,images/100px-Ab_vajpayee.jpg
-Manmohan Singh,2004-05-22,2014-05-26,images/100px-Prime_Minister_Manmohan_Singh_in_WEF_%2C2009_%28cropped%29.jpg
-Narendra Modi,2014-05-26,-,images/100px-PM_Modi_Portrait%28cropped%29.jpg
+Name,Term Start,Term End,Portrait,Party
+Jawaharlal Nehru,1947-08-15,1964-05-27,images/100px-Jnehru.jpg,Indian National Congress
+Lal Bahadur Shastri,1964-06-09,1966-01-11,images/100px-Lal_Bahadur_Shastri_%28cropped%29.jpg,Indian National Congress
+Indira Gandhi,1966-01-24,1977-03-24,images/100px-Indira_Gandhi_1977.jpg,Indian National Congress
+Morarji Desai,1977-03-24,1979-07-28,images/100px-Morarji_Desai_%28portrait%29.jpg,Janata Party
+Charan Singh,1979-07-28,1980-01-14,images/100px-Charan_Singh_%28cropped%29.jpg,Janata Party (Secular)
+Indira Gandhi,1980-01-14,1984-10-31,images/100px-Indira_Gandhi_1977.jpg,Indian National Congress (I)
+Rajiv Gandhi,1984-10-31,1989-12-02,images/100px-Rajiv_Gandhi_%281987%29.jpg,Indian National Congress (I)
+V. P. Singh,1989-12-02,1990-11-10,images/100px-V._P._Singh_%28cropped%29.jpg,Janata Dal
+Chandra Shekhar,1990-11-10,1991-06-21,images/100px-Chandra_Shekhar_%28cropped%29.jpg,Samajwadi Janata Party
+P. V. Narasimha Rao,1991-06-21,1996-05-16,images/100px-P_V_Narasimha_Rao.jpg,Indian National Congress (I)
+Atal Bihari Vajpayee,1996-05-16,1996-06-01,images/100px-Ab_vajpayee.jpg,Bharatiya Janata Party
+H. D. Deve Gowda,1996-06-01,1997-04-21,images/100px-Deve_Gowda_BNC.jpg,Janata Dal
+I. K. Gujral,1997-04-21,1998-03-19,images/100px-Inder_Kumar_Gujral_071.jpg,Janata Dal
+Atal Bihari Vajpayee,1998-03-19,2004-05-22,images/100px-Ab_vajpayee.jpg,Bharatiya Janata Party
+Manmohan Singh,2004-05-22,2014-05-26,images/100px-Prime_Minister_Manmohan_Singh_in_WEF_%2C2009_%28cropped%29.jpg,Indian National Congress
+Narendra Modi,2014-05-26,-,images/100px-PM_Modi_Portrait%28cropped%29.jpg,Bharatiya Janata Party

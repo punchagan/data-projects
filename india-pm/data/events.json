@@ -2,6 +2,7 @@
   {
     "times": [
       {
+        "party": "Indian National Congress",
         "label": "Jawaharlal Nehru",
         "ending_time": -176707800000.0,
         "starting_time": -706339800000.0
@@ -12,6 +13,7 @@
   {
     "times": [
       {
+        "party": "Indian National Congress",
         "label": "Lal Bahadur Shastri",
         "ending_time": -125386200000.0,
         "starting_time": -175584600000.0
@@ -22,6 +24,7 @@
   {
     "times": [
       {
+        "party": "Indian National Congress",
         "label": "Indira Gandhi",
         "ending_time": 227989800000.0,
         "starting_time": -124263000000.0
@@ -32,6 +35,7 @@
   {
     "times": [
       {
+        "party": "Janata Party",
         "label": "Morarji Desai",
         "ending_time": 301948200000.0,
         "starting_time": 227989800000.0
@@ -42,6 +46,7 @@
   {
     "times": [
       {
+        "party": "Janata Party (Secular)",
         "label": "Charan Singh",
         "ending_time": 316636200000.0,
         "starting_time": 301948200000.0
@@ -52,6 +57,7 @@
   {
     "times": [
       {
+        "party": "Indian National Congress (I)",
         "label": "Indira Gandhi",
         "ending_time": 468009000000.0,
         "starting_time": 316636200000.0
@@ -62,6 +68,7 @@
   {
     "times": [
       {
+        "party": "Indian National Congress (I)",
         "label": "Rajiv Gandhi",
         "ending_time": 628540200000.0,
         "starting_time": 468009000000.0
@@ -72,6 +79,7 @@
   {
     "times": [
       {
+        "party": "Janata Dal",
         "label": "V. P. Singh",
         "ending_time": 658175400000.0,
         "starting_time": 628540200000.0
@@ -82,6 +90,7 @@
   {
     "times": [
       {
+        "party": "Samajwadi Janata Party",
         "label": "Chandra Shekhar",
         "ending_time": 677442600000.0,
         "starting_time": 658175400000.0
@@ -92,6 +101,7 @@
   {
     "times": [
       {
+        "party": "Indian National Congress (I)",
         "label": "P. V. Narasimha Rao",
         "ending_time": 832185000000.0,
         "starting_time": 677442600000.0
@@ -102,6 +112,7 @@
   {
     "times": [
       {
+        "party": "Bharatiya Janata Party",
         "label": "Atal Bihari Vajpayee",
         "ending_time": 833567400000.0,
         "starting_time": 832185000000.0
@@ -112,6 +123,7 @@
   {
     "times": [
       {
+        "party": "Janata Dal",
         "label": "H. D. Deve Gowda",
         "ending_time": 861561000000.0,
         "starting_time": 833567400000.0
@@ -122,6 +134,7 @@
   {
     "times": [
       {
+        "party": "Janata Dal",
         "label": "I. K. Gujral",
         "ending_time": 890245800000.0,
         "starting_time": 861561000000.0
@@ -132,6 +145,7 @@
   {
     "times": [
       {
+        "party": "Bharatiya Janata Party",
         "label": "Atal Bihari Vajpayee",
         "ending_time": 1085164200000.0,
         "starting_time": 890245800000.0
@@ -142,6 +156,7 @@
   {
     "times": [
       {
+        "party": "Indian National Congress",
         "label": "Manmohan Singh",
         "ending_time": 1401042600000.0,
         "starting_time": 1085164200000.0
@@ -152,8 +167,9 @@
   {
     "times": [
       {
+        "party": "Bharatiya Janata Party",
         "label": "Narendra Modi",
-        "ending_time": 1505918342178.5518,
+        "ending_time": 1505919472312.9246,
         "starting_time": 1401042600000.0
       }
     ],

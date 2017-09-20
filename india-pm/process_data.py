@@ -17,6 +17,7 @@ def get_event_json(pm_info):
                 'starting_time': get_time_since_epoch(pm_info['Term Start']),
                 'ending_time': get_time_since_epoch(pm_info['Term End']),
                 'label': pm_info['Name'],
+                'party': pm_info['Party'],
             }
         ],
         'icon': pm_info['Portrait']

@@ -29,10 +29,12 @@ var tick_format = {
     .range(colors)
     .domain(parties);
 
-var format_pm_term = function(pm){
+var format_pm_term = function(pm, portrait){
     var url = "https://en.wikipedia.org/wiki/" + pm.label;
+    var image = "<img src=\"" + portrait + "\">";
     var html = "";
     html += "<strong><a target=\"_blank\" href=\"" + url + "\">" + pm.label + "</a></strong><br/>";
+    html += image;
     html += "<strong>Party:</strong> " + pm.party +"<br/>";
     html += "<strong>Term Start:</strong> " + new Date(pm.starting_time).toDateString() +"<br/>";
     html += "<strong>Term End:</strong> " + new Date(pm.ending_time).toDateString() +"<br/>";
@@ -54,7 +56,7 @@ var show_tooltip = function(d, i, datum) {
     tooltip.transition()
         .duration(200)
         .style("opacity", .9);
-    tooltip.html(format_pm_term(d))
+    tooltip.html(format_pm_term(d, datum.icon))
         .style("left", (d3.event.pageX) + "px")
         .style("top", (d3.event.pageY - 28) + "px");
 };

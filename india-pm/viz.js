@@ -35,12 +35,13 @@ var process_data = function(error, data){
 
     var chart = d3.timelines()
         .stack()
-        .showToday()
         .tickFormat(tick_format)
+        .itemHeight(30)
         .colors(colorScale)
-        .colorProperty('party');
+        .colorProperty('party')
+        .rowSeparators('lightgrey');
 
-    var svg = d3.select("#chart").append("svg").attr("width", 1200)
+    var svg = d3.select("#chart").append("svg").attr("width", window.innerWidth - 30)
         .datum(data).call(chart);
 };
 

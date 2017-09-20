@@ -30,8 +30,9 @@ var tick_format = {
     .domain(parties);
 
 var format_pm_term = function(pm){
+    var url = "https://en.wikipedia.org/wiki/" + pm.label;
     var html = "";
-    html += "<strong>" + pm.label + "</strong><br/>";
+    html += "<strong><a target=\"_blank\" href=\"" + url + "\">" + pm.label + "</a></strong><br/>";
     html += "<strong>Party:</strong> " + pm.party +"<br/>";
     html += "<strong>Term Start:</strong> " + new Date(pm.starting_time).toDateString() +"<br/>";
     html += "<strong>Term End:</strong> " + new Date(pm.ending_time).toDateString() +"<br/>";
@@ -48,6 +49,23 @@ var align_labels = function(){
     d3.selectAll('#chart .textlabels').attr('x', '40');
 };
 
+var show_tooltip = function(d, i, datum) {
+    var tooltip = d3.select('.tooltip');
+    tooltip.transition()
+        .duration(200)
+        .style("opacity", .9);
+    tooltip.html(format_pm_term(d))
+        .style("left", (d3.event.pageX) + "px")
+        .style("top", (d3.event.pageY - 28) + "px");
+};
+
+var hide_tooltip = function(){
+    var tooltip = d3.select('.tooltip');
+    tooltip.transition()
+        .duration(500)
+        .style("opacity", 0);
+};
+
 var process_data = function(error, data){
     if (error) throw error;
 
@@ -60,25 +78,12 @@ var process_data = function(error, data){
         .colors(colorScale)
         .colorProperty('party')
         .rowSeparators('lightgrey')
-        .mouseover(function(d) {
-            var tooltip = d3.select('.tooltip');
-            tooltip.transition()
-                .duration(200)
-                .style("opacity", .9);
-            console.log(d);
-            tooltip.html(format_pm_term(d))
-                .style("left", (d3.event.pageX) + "px")
-                .style("top", (d3.event.pageY - 28) + "px");
-        })
-        .mouseout(function(d) {
-            var tooltip = d3.select('.tooltip');
-            tooltip.transition()
-                .duration(500)
-                .style("opacity", 0);
-        });
+        .mouseover(show_tooltip);
 
     var svg = d3.select("#chart").append("svg").attr("width", window.innerWidth - 30)
         .datum(data).call(chart);
+
+    d3.select('#chart').on('click', hide_tooltip);
 
     align_labels();
 };

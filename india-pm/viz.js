@@ -44,6 +44,10 @@ var add_tooltip = function(){
         .style("opacity", 0);
 };
 
+var align_labels = function(){
+    d3.selectAll('#chart .textlabels').attr('x', '40');
+};
+
 var process_data = function(error, data){
     if (error) throw error;
 
@@ -75,6 +79,8 @@ var process_data = function(error, data){
 
     var svg = d3.select("#chart").append("svg").attr("width", window.innerWidth - 30)
         .datum(data).call(chart);
+
+    align_labels();
 };
 
 d3.queue()

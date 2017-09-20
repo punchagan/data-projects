@@ -12,10 +12,12 @@ TIME_FMT = '%Y-%m-%d'
 
 def get_event_json(pm_info):
     event = {
-        'label': pm_info['Name'],
         'times': [
-            {'starting_time': get_time_since_epoch(pm_info['Term Start']),
-             'ending_time': get_time_since_epoch(pm_info['Term End'])}
+            {
+                'starting_time': get_time_since_epoch(pm_info['Term Start']),
+                'ending_time': get_time_since_epoch(pm_info['Term End']),
+                'label': pm_info['Name'],
+            }
         ],
         'icon': pm_info['Portrait']
     }
@@ -26,9 +28,10 @@ def get_time_since_epoch(time_str):
     try:
         date = datetime.datetime.strptime(time_str, TIME_FMT)
     except ValueError:
-        return time.time()
+        t = time.time()
     else:
-        return time.mktime(date.timetuple())
+        t = time.mktime(date.timetuple())
+    return t * 1000
 
 
 def create_events_json():

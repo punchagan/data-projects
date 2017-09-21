@@ -47,6 +47,12 @@ var add_tooltip = function(){
         .style("opacity", 0);
 };
 
+var add_title = function(){
+    d3.select("#chart").append("div")
+        .style("text-align", 'center')
+        .append("h2").text("Prime Ministers of India");
+};
+
 var align_labels = function(){
     d3.selectAll('#chart .textlabels').attr('x', '40');
 };
@@ -73,8 +79,6 @@ var hide_tooltip = function(){
 var process_data = function(error, data){
     if (error) throw error;
 
-    add_tooltip();
-
     var chart = d3.timelines()
         .stack()
         .tickFormat(tick_format)
@@ -89,6 +93,8 @@ var process_data = function(error, data){
 
     d3.select('#chart').on('click', hide_tooltip);
 
+    add_tooltip();
+    add_title();
     align_labels();
 };
 

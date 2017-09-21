@@ -65,7 +65,9 @@ var hide_tooltip = function(){
     var tooltip = d3.select('.tooltip');
     tooltip.transition()
         .duration(500)
-        .style("opacity", 0);
+        .style("opacity", 0)
+        .style("left", "-1000px")
+        .style("top", "-1000px");
 };
 
 var process_data = function(error, data){

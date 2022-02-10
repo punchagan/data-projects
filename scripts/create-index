@@ -19,6 +19,7 @@ pushd $(dirname $0)/..
 index=$(project_dates | sort -r | cut -d \| -f 2)
 style=$(cat styles.css)
 title="Data Visualization Projects"
+date=$(date)
 
 cat > index.html <<EOF
 <!DOCTYPE html>
@@ -36,6 +37,7 @@ cat > index.html <<EOF
         <div class="projects">
           ${index}
         </div>
+        <footer>Last updated: ${date}</footer>
       </div>
     </body>
 </html>

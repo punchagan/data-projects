@@ -1,0 +1,44 @@
+#!/bin/bash
+
+set -euo pipefail
+
+
+project_dates () {
+    projects=$(git ls-files | grep / |cut -d / -f 1 | uniq)
+    for project in $projects;
+    do
+        index="${project}/index.html"
+        date=$(git log --format="format:%cs"  --diff-filter=A -- "${index}")
+        title=$(grep -o -P '(?<=<title>)(.+)(?=</title>)' "${index}")
+        link="<span><a href='${index}'>${title}</a> (${date})</span>"
+        echo "${date}|${link}"
+    done
+}
+
+pushd $(dirname $0)/..
+index=$(project_dates | sort -r | cut -d \| -f 2)
+style=$(cat styles.css)
+title="Data Visualization Projects"
+
+cat > index.html <<EOF
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+    <head>
+        <title>${title}</title>
+        <style>
+         ${style}
+        </style>
+    </head>
+    <body>
+      <div class="content">
+        <h1 class="header">${title}</h1>
+        <div class="projects">
+          ${index}
+        </div>
+      </div>
+    </body>
+</html>
+EOF
+
+popd

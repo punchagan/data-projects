@@ -4,7 +4,7 @@ set -euo pipefail
 
 
 project_dates () {
-    projects=$(git ls-files | grep / |cut -d / -f 1 | uniq)
+    projects=$(git ls-files | grep -v scripts | grep / |cut -d / -f 1 | uniq)
     for project in $projects;
     do
         index="${project}/index.html"

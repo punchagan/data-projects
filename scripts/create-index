@@ -15,13 +15,13 @@ project_dates () {
     done
 }
 
-pushd $(dirname $0)/..
-index=$(project_dates | sort -r | cut -d \| -f 2)
-style=$(cat styles.css)
-title="Data Visualization Projects"
-date=$(date)
+create_index () {
+    index=$(project_dates | sort -r | cut -d \| -f 2)
+    style=$(cat styles.css)
+    title="Data Visualization Projects"
+    date=$(date)
 
-cat > index.html <<EOF
+    cat > index.html <<EOF
 <!DOCTYPE html>
 <meta charset="utf-8">
 <html>
@@ -42,5 +42,8 @@ cat > index.html <<EOF
     </body>
 </html>
 EOF
+}
 
+pushd "${HERE}/.."
+create_index
 popd

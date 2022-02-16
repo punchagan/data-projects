@@ -19,7 +19,7 @@ project_dates () {
         screenshot "${project}" >&2
         index="${project}/index.html"
         img="${project}/screenshot.png"
-        date=$(git log --format="format:%cs"  --diff-filter=A -- "${index}")
+        date=$(git log --format="format:%cI"  --diff-filter=A -- "${index}")
         hover_date=$(git log --format="format:%cD"  --diff-filter=A -- "${index}")
         display_date=$(git log --format="format:%cr"  --diff-filter=A -- "${index}")
         title=$(grep -o -P '(?<=<title>)(.+)(?=</title>)' "${index}")

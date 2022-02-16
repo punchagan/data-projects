@@ -2,15 +2,26 @@
 
 set -euo pipefail
 
+HERE=$(dirname $0)
+
+screenshot () {
+    project="${1}"
+    if [[ ! -f "${project}/screenshot.png" ]]
+    then
+        node "${HERE}/screenshot.js" "${project}"
+    fi
+}
 
 project_dates () {
     projects=$(git ls-files | grep -v scripts | grep / |cut -d / -f 1 | uniq)
     for project in $projects;
     do
+        screenshot "${project}" >&2
         index="${project}/index.html"
+        img="${project}/screenshot.png"
         date=$(git log --format="format:%cs"  --diff-filter=A -- "${index}")
         title=$(grep -o -P '(?<=<title>)(.+)(?=</title>)' "${index}")
-        link="<span><a href='${index}'>${title}</a> (${date})</span>"
+        link="<span><a href='${index}'><img src='${img}' />${title}</a> (${date})</span>"
         echo "${date}|${link}"
     done
 }

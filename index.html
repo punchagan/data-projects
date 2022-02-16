@@ -20,25 +20,33 @@
 }
 
 .projects {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: auto auto auto;
 }
 
 .projects span {
-    margin: 0.5em 0;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    margin: 1em;
 }
 
 .projects a {
-    margin: 0 0.5em;
-    display: list-item;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 240px;
+}
+
+.projects img {
+    height: 200px;
 }
 
 footer {
     font-size: 0.8em;
-    position: absolute;
-    bottom: 1em;
 }
         </style>
     </head>
@@ -46,12 +54,12 @@ footer {
       <div class="content">
         <h1 class="header">Data Visualization Projects</h1>
         <div class="projects">
-          <span><a href='playo/index.html'>Playo Data Exploration</a> (2022-02-14)</span>
-<span><a href='india-pm/index.html'>Prime Ministers of India</a> (2017-09-20)</span>
-<span><a href='blog/index.html'>Word clouds for my blog</a> (2017-09-11)</span>
-<span><a href='30-years-floods/index.html'>Floods in India</a> (2017-09-03)</span>
+          <span><a href='playo/index.html'><img src='playo/screenshot.png' />Playo Data Exploration</a> (2022-02-14)</span>
+<span><a href='india-pm/index.html'><img src='india-pm/screenshot.png' />Prime Ministers of India</a> (2017-09-20)</span>
+<span><a href='blog/index.html'><img src='blog/screenshot.png' />Word clouds for my blog</a> (2017-09-11)</span>
+<span><a href='30-years-floods/index.html'><img src='30-years-floods/screenshot.png' />Floods in India</a> (2017-09-03)</span>
         </div>
-        <footer>Last updated: Monday 14 February 2022 04:10:41 AM IST</footer>
+        <footer>Last updated: Thursday 17 February 2022 02:12:15 AM IST</footer>
       </div>
     </body>
 </html>

@@ -20,9 +20,11 @@ project_dates () {
         index="${project}/index.html"
         img="${project}/screenshot.png"
         date=$(git log --format="format:%cs"  --diff-filter=A -- "${index}")
+        hover_date=$(git log --format="format:%cD"  --diff-filter=A -- "${index}")
         display_date=$(git log --format="format:%cr"  --diff-filter=A -- "${index}")
         title=$(grep -o -P '(?<=<title>)(.+)(?=</title>)' "${index}")
-        link="<span><a href='${index}'><img src='${img}' />${title}</a> ${display_date}</span>"
+        a_tag="<a href='${index}'><img src='${img}' />${title}</a>"
+        link="<span>${a_tag}<div title='${hover_date}'>${display_date}</div></span>"
         echo "${date}|${link}"
     done
 }

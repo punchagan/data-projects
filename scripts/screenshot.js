@@ -27,6 +27,15 @@ const screenshot = async (projectDir, serverPort) => {
   const page = await browser.newPage();
   await page.goto(url);
   await sleep(2000);
+  await page.evaluate(() => {
+    const e =
+      document.querySelector("canvas") ||
+      document.querySelector("svg") ||
+      document.querySelector("img");
+    if (e) {
+      e.scrollIntoView();
+    }
+  });
   await page.screenshot({ path: path.resolve(projectDir, "screenshot.png") });
   browser.close();
 };
